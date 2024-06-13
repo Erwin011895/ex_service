@@ -33,15 +33,18 @@ func (suite *UserUseCaseList) SetupTest() {
 
 	suite.dtoRegisterReq = &dto.RegisterReqDTO{
 		UserName: "jody",
+		Password: "12345678",
 	}
 
 	suite.dtoLoginReq = &dto.LoginReqDTO{
 		UserName: "jody",
+		Password: "12345678",
 	}
 
 	suite.dtoResp = &dto.RegisterRespDTO{
 		ID:       1,
 		UserName: "jody",
+		Password: "$2a$10$yTNi4oboulw7rTKj9XnjTug5n5ou0J.krCfogk/beqZzeNF8YodB2", // 12345678
 		WalletID: 3,
 		Token:    "asdfghjkl",
 	}
